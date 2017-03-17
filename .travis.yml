@@ -1,5 +1,7 @@
 language: python
 python:
 	- 3.5
-script: python3 test_rpn.py
+script: python3 -m unittest
+
+.PHONY: test
 
