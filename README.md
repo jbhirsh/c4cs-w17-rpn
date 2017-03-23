@@ -1,2 +1,2 @@
 # c4cs-w17-rpn
-LSPxcv9UzNUoqv3EU6XcHz6CPkSJgyjRJ
+[![Coverage Status](https://coveralls.io/repos/github/jbhirsh/c4cs-w17-rpn/badge.svg)](https://coveralls.io/github/jbhirsh/c4cs-w17-rpn)
