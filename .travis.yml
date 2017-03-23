@@ -2,7 +2,8 @@ language: python
 python:
     - 3.5
 install:
-    - pip install coveralls
+    - pip3 install coveralls
+    - pip3 install termcolor
 script: 
     coverage run --source=rpn.py -m unittest
 after_success:

@@ -3,6 +3,9 @@
 import operator
 import readline
 
+import sys
+from termcolor import colored, cprint
+
 OPERATORS = {
 	'+': operator.add,
 	'-': operator.sub,
@@ -12,7 +15,6 @@ OPERATORS = {
 	'%': operator.mod,
 	'//': operator.floordiv,
 }
-
 
 def calculate(arg):
 	stack = list()
@@ -30,9 +32,14 @@ def calculate(arg):
 	return stack.pop()
 
 def main():
+	text = colored('Hi, welcome to my calculator!', 'magenta', attrs=['bold','blink'])
+	print(text)
 	while True:
 		result = calculate(input('rpn calc> '))
-		print("Result:", result)
+		if result < 0:
+			cprint("Result:", result, 'red')
+		else:
+			cprint("Result:", result, 'green')
 
 if __name__ == '__main__':
 	main()
