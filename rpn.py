@@ -9,6 +9,7 @@ OPERATORS = {
 	'/': operator.truediv,
 	'^': operator.pow,
 	'%': operator.mod,
+	'//': operator.floordiv,
 }
 
 
