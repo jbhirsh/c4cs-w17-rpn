@@ -37,9 +37,11 @@ def main():
 	while True:
 		result = calculate(input('rpn calc> '))
 		if result < 0:
-			cprint("Result:", result, 'red')
+			ctext = colored(result, 'red')
+			print("Result:", ctext)
 		else:
-			cprint("Result:", result, 'green')
+			ctext = colored(result, 'green')
+			print("Result:", ctext)
 
 if __name__ == '__main__':
 	main()
